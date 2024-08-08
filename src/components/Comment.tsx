@@ -32,9 +32,7 @@ export default function Comment({
             </div>
           </div>
         </div>
-      {comments.map( (newcomment) => (
-        <Comment ImagePath={""} commentTitle={""} likes={0} {...newcomment}/>
-      ))}
+  
 
     </div>
   );
