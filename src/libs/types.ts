@@ -1,5 +1,12 @@
-// You can define interfaces for all React components here.
-// Do not forget to export properly.
+import { Url } from "next/dist/shared/lib/router/router";
 
-interface ReplyProps {}
-export type { ReplyProps };
+
+interface ReplyProps {
+    ImagePath : Url;
+    username : string;
+    commentTitle : string;
+    likes : number;
+    replies : [];
+    replyTitle?:string;
+  }
+  export type {ReplyProps};
